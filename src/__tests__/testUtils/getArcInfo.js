@@ -23,7 +23,7 @@ export function getArcInfo(element) {
     throw new Error('Provided path is not the section of a circumference');
   }
 
-  const center = getArcCenter(
+  const centerDecimal = getArcCenter(
     moveto.x,
     moveto.y,
     arc.rx,
@@ -34,6 +34,11 @@ export function getArcInfo(element) {
     arc.x,
     arc.y
   );
+
+  const center = {
+    x: centerDecimal.x.toNumber(),
+    y: centerDecimal.y.toNumber(),
+  };
 
   const startAngle = getAbsoluteAngle(center, moveto);
   let lengthAngle = getAbsoluteAngle(center, arc) - startAngle;

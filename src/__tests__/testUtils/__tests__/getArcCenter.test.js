@@ -27,8 +27,8 @@ describe('getArcInfo test utility', () => {
       lengthAngle: expect.toEqualWithRoundingError(lengthAngle),
       radius,
       center: {
-        x: expect.toEqualWithRoundingError(cx),
-        y: expect.toEqualWithRoundingError(cy),
+        x: cx,
+        y: cy,
       },
     };
 
