@@ -64,7 +64,7 @@
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-typescript": "^7.12.7",
     "@schwingbat/relative-angle": "^1.0.0",
-    "@size-limit/preset-small-lib": "^2.2.4",
+    "@size-limit/preset-small-lib": "^4.9.2",
     "@storybook/addon-actions": "^5.3.19",
     "@storybook/react": "^5.3.19",
     "@storybook/storybook-deployer": "^2.8.7",
